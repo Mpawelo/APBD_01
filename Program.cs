@@ -12,18 +12,18 @@ class Program
         Console.WriteLine($"Średnia: {CalculateAverage(numbers)}");
     }
 
-    static double CalculateAverage(int[] numbers)
-    {
-        if (numbers == null || numbers.Length == 0)
-            throw new ArgumentException("Tablica nie może być pusta");
-
-        double sum = 0;
-        foreach (var element in numbers) // Zmieniono nazwę zmiennej na element
+    public static double CalculateAverage(int[] numbers)
 {
-    sum += element;
+    int sum = 0;
+    foreach (var num in numbers) // Zmiana np. num -> value
+    {
+
+        sum += num;
+ feature-new
+    }
+    return (double)sum / numbers.Length;
 }
 
-    }
 }
 
 using System;
