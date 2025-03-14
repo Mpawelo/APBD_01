@@ -18,11 +18,11 @@ class Program
             throw new ArgumentException("Tablica nie może być pusta");
 
         double sum = 0;
-        foreach (int num in numbers)
-        {
-            sum += num;
-        }
-        return sum / numbers.Length;
+        foreach (var element in numbers) // Zmieniono nazwę zmiennej na element
+{
+    sum += element;
+}
+
     }
 }
 
